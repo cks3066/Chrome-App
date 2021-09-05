@@ -1,3 +1,130 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+
+html {
+  background: #333333;
+}
 .hidden {
-    display: none;
+  display: none;
+}
+
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#clock {
+  font-size: 10em;
+  display: block;
+  margin: 2vh;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+}
+
+#nameInput {
+  appearance: none;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#nameInput::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.7;
+  text-align: center;
+}
+
+#nameInput:focus,
+#nameInput:active {
+  outline: none;
+}
+
+#greeting {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+}
+
+#todo-form input {
+  appearance: none;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#todo-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+#todo-form input:focus,
+#todo-form input:active {
+  outline: none;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toDo {
+  font-size: 35px;
+}
+
+.toDoButton {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  align-content: center;
+  justify-content: center;
+}
+
+#quote {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+  font-style: italic;
+  font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+
+#quote:hover {
+  opacity: 1;
+}
+
+#weather {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in;
+  font-style: italic;
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+#weather:hover {
+  opacity: 1;
 }

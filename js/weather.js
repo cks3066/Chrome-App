@@ -7,10 +7,10 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
-      city.innerText = data.name;
-      weather.innerText = data.weather[0].main;
+      const city = document.querySelector("#weather span:first-child");
+      const weather = document.querySelector("#weather span:last-child");
+      city.innerText = `접속 위치 : ${data.name}`;
+      weather.innerText = `날씨 : ${data.weather[0].main}`;
     });
 }
 
